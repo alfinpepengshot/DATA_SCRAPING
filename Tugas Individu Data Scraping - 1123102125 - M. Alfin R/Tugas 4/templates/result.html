@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hasil Scrape</title>
+</head>
+<body>
+    <h1>Hasil Scrape</h1>
+    <a href="/">Kembali</a>
+    <div>
+        {% for img_url in images %}
+            <div>
+                <img src="{{ img_url }}" alt="Gambar" style="max-width: 300px;">
+                <p>{{ img_url }}</p>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
